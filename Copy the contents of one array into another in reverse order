@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+ int arr[5], rev[5], i,j;
+ 
+ for(i=0;i<5;i++)
+ {
+  printf("\nEnter a number to store at arr[%d] ",i);
+  scanf("%d",&arr[i]);
+ }
+ for(i=0,j=4;i<5;i++,j--)
+ {
+  arr[i]=rev[j]
+ }
+ for(i=0;i<5;i++)
+ {
+  printf("Element before reversing at arr[%d] is %d\n",i,arr[i]);
+ }
+ for(j=0;j<5;j++)
+ {
+  printf("Element after reversing into the rev[%d] is %d\n",j,rev[j]);
+ }
+}
