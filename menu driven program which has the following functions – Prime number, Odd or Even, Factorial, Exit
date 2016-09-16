@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+main()
+{
+   int n, i, fact=1;
+
+   printf("Enter a positive number ");
+   scanf("%d",&n);
+
+   for ( i = 2 ; i < n ; i++ )
+   {
+      if ( n%i == 0 )
+      {
+         printf("%d is not prime number\n", n);
+	 break;
+      }
+   }
+   if ( i == n )
+      printf("%d is prime number\n", n);
+
+    if(n%2 == 0)
+        printf("and it's a even number\n");
+
+    else
+        printf("and it's a odd number\n");
+
+    for(i=1;i<=n;i++)
+    {
+        fact = fact*i;
+
+    }
+
+    printf("and the factorial of %d = %d\n",n,fact);
+
+    printf("EXIT");
+}
